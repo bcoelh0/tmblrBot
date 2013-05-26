@@ -5,6 +5,11 @@ TmblrBot::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
+  #get "/images" => "images#index"
+  #get "/images/new" => "images#new"
+  #post '/images' => 'image#create'
+  resources :images
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -11,6 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20130526123232) do
+
+  create_table "attached_assets", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "attached_asset_file_name"
+    t.string   "attached_asset_content_type"
+    t.integer  "attached_asset_file_size"
+    t.datetime "attached_asset_updated_at"
+    t.text     "description"
+  end
 
 end

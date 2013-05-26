@@ -27,3 +27,5 @@ TmblrBot::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 end
+
+ Paperclip.options[:command_path] = "/Users/bruno/ImageMagick-6.8.5/bin/convert"

@@ -1,0 +1,4 @@
+= form_for(@image, html: { multipart: true }) do |f|
+  = f.text_area :description
+  = file_field_tag('image_attached_assets_asset', multiple: true, name: "image[attached_assets_attributes][][asset]")
+  = f.submit
